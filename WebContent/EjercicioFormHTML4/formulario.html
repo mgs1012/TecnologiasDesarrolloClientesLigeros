@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulario</title>
+</head>
+<body>
+	<br />
+	<br />Formulario de Datos
+	<hr />
+	<br />
+
+	<form id='miform'
+		action='http://www.eui.upm.es/~salonso/master/procesa.php'
+		method='get'>
+		Nombre: 
+		<input type="text" name="nombre" id="nombre" size=10 maxlength="15" /><br />
+		Clave: 
+		<input type="password" name="clave" id="clave" size=10 /><br /> 
+		Oculto: <input type="hidden" name="oculto" id="oculto" /><br /> 
+		Deseo que me mande publicidad:
+		<input type="checkbox" name="publi" value="si" checked="checked" /><br />
+		Sexo:
+		<input type="radio" name="sexo" value="H">H
+		<input type="radio" name="sexo" value="M">M <br />
+		
+		Fichero:
+		<input type="file" name="fichero"><br />
+		<textarea rows=5 cols=15></textarea><br />
+		<select name="ciudad">
+		<option value="Madrid">Madrid</option>
+		<option value="Barcelona">Barcelona</option>
+		<option value="Vigo" selected="selected">Vigo</option>
+		</select>
+		<br />
+		<input type="submit" value="Enviar" />
+		<input type="reset" value="Limpiar" />
+		<input type="button" value="Saludar" onclick='alert("Hola!")' />
+		<button type="submit"><i>Enviar también</i></button>
+	</form>
+
+
+</body>
+</html>
