@@ -1,0 +1,66 @@
+@CHARSET "ISO-8859-1";
+
+h1 {
+	font-family: bold 24pt Garamond, serif;
+	font-variant: small-caps;
+	font-style: oblique;
+	color: #d22d4e;
+	text-decoration: underline overline;
+	text-align: center;
+}
+
+h2 {
+	font: bold italique 20pt Garamond, serif;
+	font-variant: small-caps;
+	text-decoration: underline;
+	color: #f592a0;
+	text-align: center;
+}
+
+h3 {
+	background-image: url('img/bg-titulo.gif');
+	font-family: Verdana;
+	font-weight: bold;
+	color: #c0c0c0;
+}
+
+body {
+	background-color: #fff0f5;
+	background-image: url('img/bg-oscars.gif');
+	background-position: right;
+	background-repeat: repeat-y;
+}
+
+p {
+	font-size: 8pt;
+	font-family: Arial;
+	width: 90%;
+	text-align: justify;
+}
+
+p.titulo {
+	color: #cd0c32;
+	text-indent: 20px;
+}
+
+a {
+	font-weight: bold;
+	color: #cd0c32;
+	font-style: normal;
+}
+
+p#anillos,p#mountain,p#master,p#nemo {
+	background-position: top left;
+	background: url('img/bg-sinop.gif') no-repeat;
+}
+
+p#monster,p#mystic,p#lost{
+	background-position: right;
+	background: url('img/bg-sinop.gif') no-repeat;
+}
+
+span {
+	font-weight: bold;
+	text-decoration: underline;
+	color: #f4c1b5;
+}
