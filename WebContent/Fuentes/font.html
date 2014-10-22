@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="ISO-8859-1">
+<title>Fuentes prueba</title>
+<style>
+@font-face{
+	font-family: mandala;
+	src: url('Mandala Home.ttf');
+}
+@font-face{
+	font-family: paper;
+	src: url('Paper Banner-Regular.ttf');
+}
+body{
+	width:90%;
+	text-align: center;
+	padding: 20px;
+}
+h1{
+	font-size: 100px;
+	font-family: mandala, serif ;
+	text-align: center;
+}
+h2{
+font-size: 100px;
+	font-family: paper, serif ;
+	text-align: center;
+}
+
+
+@-webkit-keyframes move {
+	0% {
+		background-color:rgba(255,0,0,0.8);	
+		top: 100px;
+		left: 0px;
+	}
+	25% {
+		background-color:rgba(255,0,0,0.2);	
+		left: 100px;
+		top: 500px;	
+	}
+	50% {
+
+		background-color:rgba(255,0,255,0.5);	
+		left: 1500px;	
+		top: 500px;	
+	}
+	75% {
+		background-color:rgba(255,0,0,0.2);	
+		left: 1500px;	
+		top: 100px;	
+	}
+	100% {
+		background-color:rgba(255,255,0,0.7);	
+		left: 0px;	
+		top: 100px;	
+	}
+}
+
+
+
+ #cuadrado {
+ 	position: absolute;
+	height: 75px;
+	width: 75px;
+	margin: 0 auto;
+	left: 0px;
+	top: 100px;
+	border: 1px blue solid;
+	background-color: #66CCFF;
+}
+
+#cuadrado:hover{
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;	
+</style>
+</head>
+<body>
+	<h1>Prueba de fuentes Tecnologías de desarrollo Clientes Ligeros</h1>
+	
+	<br>
+	<br>
+	<h2> úÁHAPPYúéBIRTHDAYéÉ </h2>
+	
+	<div id="cuadrado">
+</div>
+	
+</body>
+</html>
