@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Animación CSS</title>
+</head>
+
+<style>
+
+@-webkit-keyframes move {
+	0% {
+		background-color:rgba(255,0,0,0.8);	
+		top: 40px;
+		left: 100px;
+	}
+	25% {
+		background-color:rgba(255,0,0,0.2);	
+		left: 100px;
+		top: 500px;	
+	}
+	50% {
+
+		background-color:rgba(255,0,255,0.8);	
+		left: 1000px;	
+		top: 500px;	
+	}
+	75% {
+		background-color:rgba(255,0,0,0.2);	
+		left: 1000px;	
+		top: 20px;	
+	}
+	100% {
+		background-color:rgba(255,0,0,0.7);	
+		left: 100px;	
+		top: 40px;	
+	}
+}
+
+
+
+ #div1 {
+ 	position: absolute;
+	height: 75px;
+	width: 75px;
+	margin: 0 auto;
+	left: 100px;
+	top:40px;
+	border: 1px blue solid;
+	background-color: #66CCFF;
+}
+
+#div1:hover{
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;	
+	
+	-moz-animation-name: move;
+	-moz-animation-duration: 3s;
+	-moz-animation-iteration-count: 4;
+	-moz-animation-direction: alternate;	
+	
+	-ms-animation-name: move;
+	-ms-animation-duration: 3s;
+	-ms-animation-iteration-count: 4;
+	-ms-animation-direction: alternate;	
+  
+  	-o-animation-name: move;
+	-o-animation-duration: 3s;
+	-o-animation-iteration-count: 4;
+	-o-animation-direction: alternate;	
+}
+</style>
+<body>
+<h1>Animaciones CSS3</h1>
+<div id="div1">
+</div>
+</body>
+</html>
