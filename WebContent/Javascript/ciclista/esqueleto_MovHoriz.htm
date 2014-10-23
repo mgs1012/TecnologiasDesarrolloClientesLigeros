@@ -5,8 +5,8 @@
 <Body>
 	<script type="text/javascript">
 		var pid = 0;
-		var limiteDer = 600;
-		limiteDer = screen.width - 150;
+		//var limiteDer = 600;
+		limiteDer = screen.width - 300;
 		var limiteIzq = 0;
 		var posicion;
 		var avance = 5;
@@ -33,7 +33,7 @@
 	<Font size=5><I> Pulsa encima de la imagen</I></Font>
 
 	<div id="capa"
-		Style="position: absolute; left: 10px; top: 125px; visibility: visible"
+		style="position: absolute; left: 10px; top: 125px; visibility: visible"
 		onClick="pid=setInterval('MovHoriz()',25)">
 		<img id="imagen" src='ciclista.gif'>
 	</div>
