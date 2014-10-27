@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ciclista javascript</title>
+</head>
+<body>
+	<script>
+	
+		function teclaKeyPress(Evento) {
+			var evento = Evento || window.event;
+			var cod = evento.keyCode || evento.keyCode;
+			var caracter = String.fromCharCode(cod);
+
+			if (caracter.toLowerCase() == 'z') {
+				var pos = parseInt(document.getElementById('capa').style.left);
+				pos = pos - 5;
+				document.getElementById('capa').style.left = pos + 'px';
+				document.getElementById('imagen').src = 'ciclistaflip.gif';
+			}
+
+			if (caracter.toLowerCase() == 'x') {
+			var pos = parseInt(document.getElementById('capa').style.left);
+			pos = pos + 5;
+			document.getElementById('capa').style.left = pos + 'px';
+			document.getElementById('imagen').src = 'ciclista.gif';
+			}
+		}
+
+		document.onkeypress = teclaKeyPress;
+	</script>
+
+	<font size=5><I>Ejemplo javascript eventos </I></Font>
+	<div id="capa"
+		style="position: absolute; left: 10px; top: 600px; visibility: visible">
+		<img id="imagen" src='ciclista.gif'>
+	</div>
+</body>
+</html>

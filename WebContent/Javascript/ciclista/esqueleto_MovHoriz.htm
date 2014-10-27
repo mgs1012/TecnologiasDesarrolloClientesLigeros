@@ -1,0 +1,41 @@
+<HTML>
+<Head>
+<Title></Title>
+</Head>
+<Body>
+	<script type="text/javascript">
+		var pid = 0;
+		//var limiteDer = 600;
+		limiteDer = screen.width - 300;
+		var limiteIzq = 0;
+		var posicion;
+		var avance = 5;
+
+		function MovHoriz() {
+			var cap = document.getElementById("capa");
+			pos = parseInt(cap.style.left);
+			if(pos < limiteIzq){
+				avance = 5;
+				document.getElementById('imagen').src = 'ciclista.gif';
+			}
+			else{
+				avance = -5;
+				document.getElementById('imagen').src = 'ciclistaflip.gif'
+			}
+			
+			pos = pos + avance;
+			cap.style.left = pos + "px";
+
+		} // de la funcion MovHoriz
+		proceso = setInterval(MovHoriz(), 25);
+	</script>
+
+	<Font size=5><I> Pulsa encima de la imagen</I></Font>
+
+	<div id="capa"
+		style="position: absolute; left: 10px; top: 125px; visibility: visible"
+		onClick="pid=setInterval('MovHoriz()',25)">
+		<img id="imagen" src='ciclista.gif'>
+	</div>
+</Body>
+</Html>

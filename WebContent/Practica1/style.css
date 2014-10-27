@@ -1,0 +1,24 @@
+@CHARSET "utf-8";
+
+head{
+	
+}
+
+#logo{
+	position: absolute;
+	width: 
+}
+
+body{
+	width: 800px;
+	background-color: #fed9a7;
+	
+}
+
+footer{
+	width: 800px;
+	height: 40px;
+	position: absolute;
+	top: 700px;
+	background-color: #54caf1;
+}
