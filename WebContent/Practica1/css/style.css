@@ -1,0 +1,143 @@
+@CHARSET "utf-8";
+
+@font-face {
+	font-family: titlefont;
+	src: url(../fuentes/FabricsLight.ttf);
+}
+
+@font-face {
+	font-family: font;
+	src: url('../fonts/Scrunch.ttf');
+}
+
+@-webkit-keyframes girar {
+	0% {
+	   -webkit-transform: rotate(0deg);
+    }
+
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+html, body, div, iframe {
+	margin: 0px;
+	height: 100%;
+	padding: 0px;
+}
+
+body {
+	background-color: rgba(255, 205, 85, 0.5);
+}
+
+h1 {
+	font-family: font, serif;
+	color: #FA6A31;
+	text-align: center;
+}
+
+li{
+	list-style-type: none;
+}
+
+ul{
+	padding-left: 0;
+}
+
+h3 {
+	font-family: menuitem, sans-serif;
+}
+
+table {
+	width: 100%;
+}
+
+h3 a{
+	color: #3c3c3c;  
+	text-decoration: none;  
+}
+
+.centrado {
+	margin: 0 auto;
+}
+
+#titulo {
+	background-color: rgba(16, 74, 87, 0.9);
+	width: 100%;
+	padding: 8px 1px 1px 1px;
+	border-bottom: dashed #91beae;
+	float: left;
+	clear: left;
+}
+
+#celdatitulo {
+	float: left;
+	width: 83%;
+}
+
+#celdalogo {
+	padding-left: 1%;
+	float: left;
+}
+
+#logo {
+	-webkit-animation-name: girar;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#logopie{
+	width: 88px;
+	height: 65px;
+}
+
+#seccionMedio {
+	float: left;
+	clear: left;
+	width: 100%;
+	min-height: 80%;
+}
+
+#menu {
+	background-color: rgba(16, 74, 87, 0.6);
+	width: 20%;
+	min-width: 200px;
+	float: left;
+}
+
+.itemmenu {
+	padding-left: 8%;
+	background-color: #c8dfd7;
+	color: #3c3c3c;
+	cursor: pointer;
+}
+
+.itemmenu:hover {
+	background-color: #deebe7;
+}
+
+#contenedor {
+	float: right;
+	width: 80%;		
+}
+
+#marcocontenedor {
+	width: 80%;
+	border: none;
+	position: absolute;
+	min-height: 100%;
+}
+
+#footer {
+	clear: left;
+	background-color: rgba(16, 74, 87, 0.9);
+	border-top: dashed #91beae;
+	position: relative;	
+	height: 30px;
+	text-align: center;
+}
+
+#footer a{
+	color: #fa6a31; 
+	font-weight: bolder;
+}
