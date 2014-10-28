@@ -15,7 +15,5 @@ function esPrimo(num){
 }
   
 function calcularNumPrimos(){
-	if(){
-		
-	}
+
 }
