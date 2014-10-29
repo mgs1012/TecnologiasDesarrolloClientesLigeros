@@ -4,21 +4,39 @@ head{
 	
 }
 
-#logo{
-	position: absolute;
-	width: 
+
+#logo {
+	-webkit-animation-name: translate;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
 }
 
+#logopie{
+	width: 88px;
+	height: 65px;
+}
+
+h1 {
+	font-family: font, serif;
+	color: #FA6A31;
+	text-align: center;
+}
 body{
 	width: 800px;
 	background-color: #fed9a7;
 	
 }
 
-footer{
-	width: 800px;
-	height: 40px;
-	position: absolute;
-	top: 700px;
+#footer {
+	clear: left;
 	background-color: #54caf1;
+	border-top: dashed #91beae;
+	position: relative;	
+	height: 30px;
+	text-align: center;
+}
+
+#footer a{
+	color: #fa6a31; 
+	font-weight: bolder;
 }
