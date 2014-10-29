@@ -16,20 +16,44 @@ head{
 	height: 65px;
 }
 
+#celdatitulo {
+	float: left;
+	width: 83%;
+}
+
+#celdalogo {
+	padding-left: 1%;
+	float: left;
+}
+
 h1 {
 	font-family: font, serif;
-	color: #FA6A31;
+	color: #ff8a51;
 	text-align: center;
+	font-weight: bold;
 }
 body{
 	width: 800px;
-	background-color: #fed9a7;
-	
+	background-image: url('img/wallpapermadera.jpg');
 }
 
+.opcion{
+	background-color: #172f3d;
+}
+
+.itemmenu {
+	padding-left: 8%;
+	background-color: ;
+	color:;
+	cursor: pointer;
+}
+
+.itemmenu:hover {
+	background-color: #ff8a51;
+}
 #footer {
 	clear: left;
-	background-color: #54caf1;
+	background-color: #ff8a51;
 	border-top: dashed #91beae;
 	position: relative;	
 	height: 30px;
