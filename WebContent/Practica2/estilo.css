@@ -1,1 +1,7 @@
 @CHARSET "utf-8";
+
+*{
+	width: 600px;
+	height: 100%;
+	background-color: #eeebb5;
+}
