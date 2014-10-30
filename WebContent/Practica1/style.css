@@ -47,7 +47,7 @@ header{
 	width: 20px;
 	height: 20px;
 	margin: 10px;
-	background-image: url('img/moodle.jpg');
+	background-image: url(img/moodle.jpg);
 }
 
 h1 {
@@ -114,7 +114,8 @@ body {
 	height: 200px;
 }
 
-.info{
+#info{
+	margin: auto;
 	margin-top: 70px;
 	font-size: 22px;
 	text-align: justify;
