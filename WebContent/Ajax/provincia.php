@@ -3,7 +3,7 @@
   $CP   = $_GET['CP'];
   $num = substr($CP,0,2);
   $provincias= array( 
-'01' => 'Álava',
+'01' => 'Alava',
 '02' => 'Albacete',
 '03' => 'Alicante',
 '04' => 'Almeria',

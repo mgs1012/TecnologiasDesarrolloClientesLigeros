@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type='text/javascript' src="js/jquery.js"></script>
+<script type='text/javascript' src="js/jquery-ui.js"></script>
+<script type='text/javascript' src="js/jquery-ui-min.js"></script>
+<script type="text/javascript" src="jquery-ui.datepicker.es.js"></script>
+<link rel="stylesheet" href="/css/estilo.css">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/jquery-ui.theme.css" rel="stylesheet">
+<link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+
+ <script>
+  $(function() {
+    $( "#fecha" ).datepicker({
+      showOn: "button",
+      buttonImage: "js/images/calendar",
+      buttonImageOnly: true,
+      buttonText: "Select date"
+    });
+  });
+  </script>
+  
+<title>CLUB JQUERY</title>
+</head>
+
+<script type="text/javascript">
+$().ready(function (){
+	$.datepicker.setDefaults($.datepicker.regional["es"]){ dateFormat: 'dd/mm/yy'};
+	$('#fecha').datepicker({
+		dateFormat: "dd/mm/yy",
+		dayNamesMin: ["D","L","M","X","J","V","S"],
+		firstDay:1,
+		minDate: -10,
+		maxDate: "+1M + 10D",
+		onSelect: function(selectedDate){ alert(selectedDate);
+			this.disabled=true;
+			}
+		});
+	showOn: "button",
+    buttonImage: "js/images/calendar",
+    buttonImageOnly: true,
+    buttonText: "Select date"
+}); // de ready
+</script>
+<body>
+<h1></h1>
+
+<form id="formulario" method="post" action=""http://www.eui.upm.es/~salonso/master/procesa.php"" >
+Nombre de usuario :
+<input type="text" id="nombre" name="nombre_usuario" /><br/>
+DNI :
+<input type="text" id="dni" name="dni_usuario" /><br/>
+C.P. domicilio :
+<input type="number" id="cp" name="cp_usuario" /><br/>
+Provincia :
+<input type="text" id="provincia" name="provincia_usuario" /><br/>
+Fecha alta:
+<input type="text" id="fecha" name="fecha_usuario" size="20"/><br/>
+</form>
+
+</body>
+</html>
