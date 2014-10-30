@@ -12,9 +12,10 @@
 	}
 
 	100%{
-	-webkit-transform:rotate(360deg); 
+	-webkit-transform: rotate(360deg); 
 	}
 }
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -22,22 +23,23 @@
 	color: #fed9a7;
 }
 
-head {
+header{
+	padding: 20px;
+	background-color: #3f3f3f;
+	width: 1500px;
+	height: 70px;	
 	
 }
 
-#logo_principal {
-	width: 40px;
-	height: 40px;
-	margin: 10px;
-	top: 20px;
+#logo_principal{
+	margin-top: 10px;
 	background-image: url('img/miwlogo.png');
 }
 
-div.logo_interior{
+.logo_interior{
 	width: 40px;
 	height: 40px;
-	background-image: url('img/icon_gris.png');
+	background-image: url('/img/icon_gris.png');
 	float: left;
 }
 
@@ -52,12 +54,10 @@ h1 {
 	font-family: font, serif;
 	color: #ff8a51;
 	font-weight: bold;
-	font-size: 60px;
+	font-size: 50px;
 	text-align : center;
 	width: 100%;
-	padding: 8px 1px 1px 1px;
 	float: left;
-	clear: left;
 	text-align: center;
 }
 
@@ -70,19 +70,11 @@ body {
 	background-color: #172f3d;
 }
 
-#itemmenu {
-	margin-top: 70px; 
-}
-
-.itemmenu:hover {
-	background-color: #ff8a51;
-}
-
 #menu {
 	position: fixed;
-	width: 70px;
+	width: 75px;
 	height: 100%;
-	background-color: #2f3030;
+	background-color: #3f3f3f;
 	overflow: hidden;
 	-webkit-transition: width 0.5s;
 }
@@ -91,34 +83,43 @@ body {
 	width: 170px;
 }
 
-li {
-	list-style-type: none;
+#cont{
+	margin-top: 100px;
 }
 
-ul {
-	padding-left: 0;
-}
-
-.contenedor_general {
+.contenedor_general{
 	width: 150px;
 	height: 40px;
 	margin-left: 10px;
-	margin-top: 20px;
+	margin-top: 30px;	
 }
 
+
+.contenedor_general:hover{
+	background-color: #ff8a51;
+}
+
+
 .texto {
-	margin-left: 60px;
+	margin-left: 70px;
 	line-height: 40px;
 	font-size: 20px;
 }
 
 #contenido{
 	position: absolute;
-	right: 0px;
-	left: 190px;
-	height: 300px;
+	top: 140px;
+	right: 170px;
+	left: 200px;
+	height: 200px;
 }
 
+.info{
+	margin-top: 70px;
+	font-size: 22px;
+	text-align: justify;
+	color: #172f3d;
+}
 
 #footer {
 	clear: left;
