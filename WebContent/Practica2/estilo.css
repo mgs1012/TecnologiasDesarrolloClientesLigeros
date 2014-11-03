@@ -1,7 +1,123 @@
 @CHARSET "utf-8";
 
-*{
-	width: 600px;
-	height: 100%;
-	background-color: #eeebb5;
+@font-face {
+	font-family: garamond;
+	src: url(fonts/AppleGaramond-Light.ttf);
+}
+
+body {
+	font-family: garamond, serif;
+	font-size: 15pt;
+	background-image: url("img/papel_amarillo.jpg");
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 3% auto;
+}
+
+input {
+	background-color: threedlightshadow;
+	border: none;
+	border-bottom: 1.5px double;
+	font: inherit;
+}
+
+.table {
+	display: table;
+}
+
+.ancho {
+	width: 90%;
+}
+
+.tr {
+	display: table-row;
+}
+
+.td {
+	display: table-cell;
+	padding: 0 2%;
+}
+
+.derecha {
+	text-align: right;
+}
+
+#container {
+	margin-top: 10%;
+}
+
+#fac {
+	float: left;
+	width: 55%;
+	margin-left: 230px;
+}
+
+
+button {
+	font-family: garamond, serif;
+	font-size: 15px;
+	font-weight: bolder;
+	border-radius: 25px;
+	max-height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	margin-left: 80px;
+}
+
+#btnInsert {
+	background-color: #c0c0c0;
+	padding: 15px;
+}
+
+#btnSupr{
+	background-color: #ca0449;
+}
+
+#btnSupr:disabled {
+	background-color: #ffeaf0;
+}
+
+#btnCalc {
+	background-color: #c0c0c0;
+}
+
+#btnSend {
+	background-color: #c0c0c0;
+}
+
+.sinBorde {
+	border: none;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+#sinCal {
+	display: none;
+}
+
+#calSi {
+	display: table-cell;
+}
+
+#grafico {
+	margin-top: 50px;
+	margin-left: 110px;
+	float: left;
+	width: 49%;
+}
+
+canvas {
+	display: block;
+	margin-left: 50%;
 }
