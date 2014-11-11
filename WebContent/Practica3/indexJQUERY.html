@@ -6,7 +6,7 @@
 <script type='text/javascript' src="js/jquery-ui.js"></script>
 <script type='text/javascript' src="js/jquery-ui-min.js"></script>
 <script type="text/javascript" src="jquery-ui.datepicker.es.js"></script>
-<link rel="stylesheet" href="/css/estilo.css">
+<link rel="stylesheet" href="css/estilo.css">
 <link href="css/jquery-ui.css" rel="stylesheet">
 <link href="css/jquery-ui.theme.css" rel="stylesheet">
 <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
@@ -45,20 +45,61 @@ $().ready(function (){
 }); // de ready
 </script>
 <body>
-<h1></h1>
+<h1>Formulario alta club</h1>
 
 <form id="formulario" method="post" action=""http://www.eui.upm.es/~salonso/master/procesa.php"" >
 Nombre de usuario :
-<input type="text" id="nombre" name="nombre_usuario" /><br/>
+<input type="text" id="nombre" name="nombre_usuario" required/><br/>
 DNI :
-<input type="text" id="dni" name="dni_usuario" /><br/>
+<input type="text" id="dni" name="dni_usuario" required/><br/>
 C.P. domicilio :
-<input type="number" id="cp" name="cp_usuario" /><br/>
+<input type="number" id="cp" name="cp_usuario" required/><br/>
 Provincia :
-<input type="text" id="provincia" name="provincia_usuario" /><br/>
+<input type="text" id="provincia" name="provincia_usuario" required/><br/>
 Fecha alta:
-<input type="text" id="fecha" name="fecha_usuario" size="20"/><br/>
-</form>
-
+<input type="text" id="fecha" name="fecha_usuario" size="20" required/><br/>
+<div class="tr">
+				<div class="td">¿Por qué medio desea que se le envíe el carnet del club?</div>
+				<div class="td">
+					<div id="radio">
+						<input type="radio" id="radio1" name="medio" value="ordinario" onchange="mostrarCorreo();"><label for="radio1">Correo ordinario</label>
+						<input type="radio" id="radio2" name="medio" value="electronico" onchange="mostrarCorreoElectronico();"><label for="radio2">Correo electrónico</label>
+					</div>
+				</div>
+			</div>	
+			<div id="correoElectronicoContainer" class="tr no-display">
+				<div class="td">Correo electrónico:</div>
+				<div class="td"><input type="text" name="email" id="email"/></div>
+			</div>
+			<div id="correoContainer" class="tr no-display">
+				<div class="td">Dirección de correo:</div>
+				<div class="td"><input type="text" name="correo" id="correo"/></div>
+				<div class="td">Localidad:</div>
+				<div class="td"><input type="text" name="localidad" id="localidad"/></div>
+			</div>
+			<div class="tr">
+				<div class="td">Ordene los siguientes temas por orden de prioridad:</div>
+				<div class="td">
+					<ul id="sortable">
+						<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Cine</li>
+						<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Libros</li>
+						<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Deporte</li>
+						<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Juegos</li>
+					</ul>
+				</div>
+			</div>	
+			</div>
+		<div id="sliderContainer">
+			<p>
+	 			 <label for="amount">Tamaño letra:</label>
+	 			 <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+			</p>		
+			<div id="slider-vertical"></div>
+		</div>
+		
+		<div id="contenedorBotones">
+			<input type="submit"  id="enviar" value="Enviar">
+		</div>
+	</form>
 </body>
 </html>

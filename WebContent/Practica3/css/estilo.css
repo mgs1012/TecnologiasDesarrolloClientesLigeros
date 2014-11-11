@@ -5,3 +5,111 @@
 	padding: 10px;
 	
 }
+body {
+	color: #1c94c4;
+	background-image: url("images/fondo.jpg");
+	font-size: 16px;
+}
+
+h1{
+	text-align: center;
+	border-bottom-style: dotted;
+}
+
+table {	
+    border-collapse: collapse;
+    margin: 3% auto;
+}
+
+input{
+	border: solid 1px #EF8C08;
+}
+
+button{
+	border-radius: 25px;
+	max-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+p{
+	text-align: center;
+}
+#sortable {
+	list-style-type: none;
+	padding: 0;
+	width: 60%;
+}
+
+#sortable li {
+	margin: 0 3px 3px 3px;
+	padding: 0.4em;
+	padding-left: 1.5em;
+	height: 18px;
+}
+
+#sortable li span {
+	position: absolute;
+	margin-left: -1.3em;
+}
+
+.table{
+	display: table;	
+	width: 75%;
+}
+
+.tr{
+	display: table-row;
+}
+
+.td{
+	display: table-cell;
+	padding: 0 1%;
+}
+
+.no-display{
+	display: none;
+}
+
+.celdaNoBorde{
+	border: none;
+}
+
+.anchoTotal{
+	width: 100%;
+}
+
+.centrado{
+	margin: 0 auto;
+}
+
+.hereda{
+	font-family: inherit;
+	font-size: inherit;
+}
+
+#contenedorBotones{
+	text-align: center;
+	clear: both;
+}
+
+#amount{
+	background: transparent;
+	
+}
+
+#sliderContainer{
+	float: left;
+	width: 20%;
+}
+
+#slider-vertical{
+	height:300px;
+	margin: 0 21%;
+}
+
+#formContainer{
+	float: left;
+	width: 80%;	
+}
