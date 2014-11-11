@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script type='text/javascript' src="js/jquery.js"></script>
-<script type='text/javascript' src="js/jquery-ui.js"></script>
-<script type='text/javascript' src="js/jquery-ui-min.js"></script>
-<script type="text/javascript" src="jquery-ui.datepicker.es.js"></script>
-<link rel="stylesheet" href="css/estilo.css">
 <link href="css/jquery-ui.css" rel="stylesheet">
 <link href="css/jquery-ui.theme.css" rel="stylesheet">
-<link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+<link href="css/jquery-ui.structure.css" rel="stylesheet">
+<link rel="shortcut icon" href="img/ic.png" />
+<link href="css/estilo.css" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type='text/javascript' src="js/javascript.js"></script>
 
  <script>
   $(function() {
@@ -48,16 +48,18 @@ $().ready(function (){
 <h1>Formulario alta club</h1>
 
 <form id="formulario" method="post" action=""http://www.eui.upm.es/~salonso/master/procesa.php"" >
-Nombre de usuario :
+<fieldset>
+<label for="fieldNombre">Nombre de usuario :</label>
 <input type="text" id="nombre" name="nombre_usuario" required/><br/>
-DNI :
+<label for="fieldDNI">DNI :</label>
 <input type="text" id="dni" name="dni_usuario" required/><br/>
-C.P. domicilio :
+<label for="fieldCP">C.P. domicilio :</label>
 <input type="number" id="cp" name="cp_usuario" required/><br/>
-Provincia :
+<label for="fieldProv">Provincia :</label>
 <input type="text" id="provincia" name="provincia_usuario" required/><br/>
-Fecha alta:
+<label for="fieldFechaAlta">Fecha alta:</label>
 <input type="text" id="fecha" name="fecha_usuario" size="20" required/><br/>
+</fieldset>
 <div class="tr">
 				<div class="td">¿Por qué medio desea que se le envíe el carnet del club?</div>
 				<div class="td">
@@ -69,7 +71,7 @@ Fecha alta:
 			</div>	
 			<div id="correoElectronicoContainer" class="tr no-display">
 				<div class="td">Correo electrónico:</div>
-				<div class="td"><input type="text" name="email" id="email"/></div>
+				<div class="td"><input type="email" name="email" id="email"/></div>
 			</div>
 			<div id="correoContainer" class="tr no-display">
 				<div class="td">Dirección de correo:</div>
@@ -88,16 +90,15 @@ Fecha alta:
 					</ul>
 				</div>
 			</div>	
-			</div>
 		<div id="sliderContainer">
 			<p>
 	 			 <label for="amount">Tamaño letra:</label>
-	 			 <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+	 			 <input type="text" id="amount" readonly style="border:0; color:#0000FF; font-weight:bold;">
 			</p>		
 			<div id="slider-vertical"></div>
 		</div>
 		
-		<div id="contenedorBotones">
+		<div id="btn">
 			<input type="submit"  id="enviar" value="Enviar">
 		</div>
 	</form>

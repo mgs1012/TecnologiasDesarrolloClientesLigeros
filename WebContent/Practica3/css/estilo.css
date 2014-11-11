@@ -7,7 +7,7 @@
 }
 body {
 	color: #1c94c4;
-	background-image: url("images/fondo.jpg");
+	background-image: url('../img/wallpapermadera.jpg');
 	font-size: 16px;
 }
 
@@ -16,13 +16,29 @@ h1{
 	border-bottom-style: dotted;
 }
 
+form{
+	margin-left: 0px;
+}
+
+label{
+	display: inline-block;
+	width: 40%;
+}
+
+fieldset{
+	border: none;
+	margin: 0px auto;
+}
+
 table {	
     border-collapse: collapse;
     margin: 3% auto;
 }
 
 input{
-	border: solid 1px #EF8C08;
+	margin-left: 0px;
+	padding: 3px;
+	border: dashed 1px #0080ff;
 }
 
 button{
@@ -35,6 +51,10 @@ button{
 
 p{
 	text-align: center;
+}
+
+div{
+	padding: 20px;
 }
 #sortable {
 	list-style-type: none;
@@ -89,7 +109,7 @@ p{
 	font-size: inherit;
 }
 
-#contenedorBotones{
+#btn{
 	text-align: center;
 	clear: both;
 }
