@@ -125,10 +125,10 @@ function calculo() {
 }
 
 function calculoImporte(imp) {
-	
-	p = parseFloat(document.getElementById("precio" + imp).value);
-	u = parseInt(document.getElementById("unidades" + imp).value);
-	document.getElementById("importe" + imp).value = (p * u).toFixed(2);
+	var importe = document.getElementById("importe" + imp).value;
+	var p = parseFloat(document.getElementById("precio" + imp).value);
+	var u = parseInt(document.getElementById("unidades" + imp).value);
+	importe = (p * u).toFixed(2);
 }
 
 function actualizarSubtotal(i) {	
